@@ -1,41 +1,120 @@
-*{
+* {
     padding: 0;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-
-
-
-
-
-
-.cardContainer{
+/* header */
+header {
     display: flex;
-    background-color: blueviolet;
-    width: auto;
-    gap: 35px;
+
+    height: 15vh;
+    align-items: center;
+    justify-content: space-between;
+    color: #8a433d;
+    margin: 0 30px;
+
 }
-.card{
+
+header img {
+    aspect-ratio: 1/1;
+    width: 100px;
+    height: auto;
+}
+
+.linksContainer {
+    display: flex;
+    gap: 30px;
+}
+
+header a {
+
+    position: relative;
+    display: inline-block;
+
+    height: 30px;
+    color: #ca8981;
+    text-decoration: none;
+}
+
+header a:after {
+    content: "";
+    display: block;
+    display: absolute;
+    left: 0;
+    bottom: -6px;
+    height: 2px;
+    width: 0%;
+    background: #ca8981;
+    transition: 0.2s ease;
+}
+
+header a:hover::after {
+    width: 100%;
+}
+
+/* main */
+.cardContainer {
+    display: flex;
+    background-color: #ca8981;
+    width: auto;
+    height: 90vh;
+    gap: 35px;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
     padding: 25px;
-    width:280px;
-   
-    background-color: rgb(69, 69, 226);
+    width: 280px;
+    height: 450px;
+
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
     gap: 7px;
-    
-    
+    color: black;
+
 }
-p{
-    width: 200px;
-    height: 110px;
+
+.card img {
+    border-radius: 10px;
+}
+
+
+
+.card button {
+    padding: 7px;
+    background-color: rgb(120, 70, 29);
+    border: none;
+    border-radius: 10px;
     color: white;
 }
-button{
-    padding: 5px;
-    background-color: rgb(42, 165, 93);
-    border: 1px solid rgb(33, 128, 72);
+
+.space{
+    height: 20vh;
+}
+/* footer */
+footer {
+    background-color: #8a443d;
     color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 20vh;
+    justify-content: center;
+    align-items: center;
+
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: antiquewhite;
 }
